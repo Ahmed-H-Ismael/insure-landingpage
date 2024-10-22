@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+.footer_header{
+    @apply text-gray-500 font-medium mb-6 mt-6;
+}
+.footer_link{
+    @apply text-gray-700 font-medium hover:underline;
+}
+.mynav{
+    @apply top-0 hidden  lg:w-3/4 lg:flex justify-end gap-8 transition-all
+}
+.mynav.active{
+    @apply  absolute w-full top-20 left-0 block z-10 text-center text-white h-screen bg-nav;
+}
+.nav-link{
+    @apply  text-white font-medium lg:text-primary-GrayishVioletDark opacity-50 hover:opacity-100 block lg:inline my-10 lg:my-0
+}
+.plan-link{
+    @apply border-2 border-black pt-1 pb-2 px-6 font-medium opacity-50 hover:opacity-100  hover:bg-black hover:text-white
+}
+.plan-link.active{
+    @apply block my-10 border-white w-1/2 m-auto text-white
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    .icons-footer{
+        width: 24px;
+        height: 24px;
+        fill: grey;
+    }
+    .face-icon:hover{
+        fill: rgb(15, 15, 235);
+    }
+    .x-icon:hover{
+        fill: rgb(103, 103, 240);
+    }
+    .p-icon:hover{
+        fill: red;
+    }
+    .insta-icon:hover{
+        fill: rgb(218, 112, 112);
+    }
+    .bg-nav{
+        background-color: hsl(256, 26%, 20%);
+    }
+    .pattern{
+        background-image: url(../images/bg-pattern-mobile-nav.svg);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 50%;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+}

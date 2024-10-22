@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="/output.css" rel="stylesheet">
+  <title>Frontend Mentor | Insure landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="relative">
+    <div class="container mx-auto px-10 lg:px-40">
+      <nav class="nav flex justify-between pt-6 pb-6 items-center">
+        <figure class="w-1/4">
+          <img src="./images/logo.svg" alt="logo">
+        </figure>
+        <ul class="mynav">
+              <li>
+                <a href="#" class="nav-link">How we work</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link"> Account</a>
+              </li>
+              <li>
+                <a href="#" class="plan-link">View plans</a>
+              </li>
+              <div class="pattern"></div>
+        </ul>
+        <figure class="tab block cursor-pointer lg:hidden" >
+          <img src="./images/icon-hamburger.svg" alt="tab">
+        </figure>
+      </nav>
+    </div>
+  </header>
+  <div class="bg-primary-VioletDark relative pt-0 pb-20 h-mobile lg:h-desktop lg:pb-0 lg:pt-20">
+    <picture class="bg-img-1 absolute right-0 w-32 lg:w-80 -bottom-48 lg:top-0">
+      <source media="(max-width: 576px)" srcset="./images/bg-pattern-intro-right-mobile.svg" />
+      <source media="(min-width: 577px)" srcset="./images/bg-pattern-intro-right-desktop.svg"/>
+      <img src="./images/bg-pattern-intro-right-desktop.svg" alt="left">
+    </picture>   
+    <div class="container mx-auto px-0 lg:px-40">
+      <div class="header_content flex flex-col lg:flex-row gap-16 lg:gap-8 items-start text-white">
+
+        <picture class="w-full lg:w-3/6 lg:order-2">
+          <source media="(max-width: 799px)" srcset="./images/image-intro-mobile.jpg" />
+          <source media="(min-width: 800px)" srcset="./images/image-intro-desktop.jpg"/>
+          <img src="./images/image-intro-desktop.jpg" alt="intro"  class="w-full">
+        </picture>
+
+        <div class="header_content-left text-center lg:text-left text-white w-full lg:w-3/6 lg:order-1">
+          <hr class="w-1/6 mb-14 hidden lg:block">
+          <h1 class="text-6xl font-bold mb-8 font-fontDM">Humanizing<br> your insurance.</h1>
+          <p class="opacity-50"> Get your life insurance coverage easier and faster. We blend our expertise 
+            and technology to help you find the plan that’s right for you. Ensure you 
+            and your loved ones are protected.</p>
+            <button class="border-2 border-white mt-6 pt-1 pb-2 py-1 px-6 font-medium opacity-50 hover:opacity-100 hover:bg-white hover:text-black">View plans</button>
+        </div>
+
+      </div>
+    </div>
+    <picture class="bg-img-1 absolute left-0 w-36 bottom-72 lg:-bottom-2/4">
+      <source media="(max-width: 799px)" srcset="./images/bg-pattern-intro-left-mobile.svg" />
+      <source media="(min-width: 800px)" srcset="./images/bg-pattern-intro-left-desktop.svg"/>
+      <img src="./images/bg-pattern-intro-left-desktop.svg" alt="left">
+    </picture>     
+  </div>
+  <main class="py-16">
+    <div class="container mx-auto px-10 lg:px-40">
+      <section class="section-one mt-0 lg:mt-40">
+        <hr class="max-w-full lg:w-1/6 mb-14 border-t-primary-VioletDark border-t-2">
+        <h2 class="text-4xl text-center lg:text-5xl lg:text-left font-bold mb-8 font-serif"> We’re different.</h2>
+        <div class="section-one-content flex flex-col lg:flex-row gap-12 mt-20">
+          <div class="content-one text-center lg:text-left">
+            <img src="./images/icon-snappy-process.svg" alt="Snappy" class="m-auto lg:ml-0">
+            <h3 class="font-semibold text-primary-VioletDarkvery text-2xl mt-4 mb-4">Snappy Process</h3>
+            <p class="text-primary-BlueGrayish font-medium">  Our application process can be completed in minutes, not hours. Don’t get 
+              stuck filling in tedious forms.</p>
+          </div>
+          <div class="content-one text-center lg:text-left">
+            <img src="./images/icon-affordable-prices.svg" alt="Snappy" class="m-auto lg:ml-0">
+            <h3 class="font-semibold text-primary-VioletDarkvery text-2xl mt-4 mb-4">Affordable Prices</h3>
+            <p class="text-primary-BlueGrayish font-medium">    We don’t want you worrying about high monthly costs. Our prices may be low, 
+              but we still offer the best coverage possible.</p>
+          </div>
+          <div class="content-one text-center lg:text-left">
+            <img src="./images/icon-affordable-prices.svg" alt="Snappy" class="m-auto lg:ml-0">
+            <h3 class="font-semibold text-primary-VioletDarkvery text-2xl mt-4 mb-4"> People First</h3>
+            <p class="text-primary-BlueGrayish font-medium">  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+              sure you’re covered when you need it..</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-two mt-40">
+        <div class="our-work bg-primary-VioletDark flex flex-col lg:flex-row justify-between items-center p-12 relative overflow-hidden">
+          <picture class="absolute right-0 top-0">
+            <source media="(max-width: 799px)" srcset="./images/bg-pattern-how-we-work-mobile.svg" />
+            <source media="(min-width: 800px)" srcset="./images/bg-pattern-how-we-work-desktop.svg" />
+            <img src="./images/bg-pattern-how-we-work-desktop.svg" alt="how we work" />
+          </picture>          
+          <p class="text-white text-4xl text-center mb-8 lg:mb-0 lg:text-left lg:text-5xl font-fontDM">Find out more <br> about how we work</p>
+          <button class="text-white border-2 border-white pt-1 pb-2 py-1 px-6 font-medium hover:opacity-100 hover:bg-white hover:text-black">How we work
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="mt-40 relative">
+    <picture class="-z-10 absolute left-0 top-0">
+      <source media="(max-width: 799px)" srcset="./images/bg-pattern-footer-mobile.svg" />
+      <source media="(min-width: 800px)" srcset="./images/bg-pattern-footer-desktop.svg "/>
+      <img src="./images/bg-pattern-footer-desktop.svg" alt="how we work" />
+    </picture>     
+    <div class="container mx-auto px-10 lg:px-40">
+      <div class="header-footer flex flex-col lg:flex-row lg:justify-between z-10 relative">
+        <figure class="mb-10 mx-auto lg:m-0">
+          <img src="./images/logo.svg" class="svg-filter" alt="logo">
+        </figure>
+        <div class="social-links justify-center flex gap-4">
+          <a href="#">
+            <svg class="icons-footer face-icon">
+              <use xlink:href="./images/sprite.svg#facebook-icon"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icons-footer x-icon">
+              <use xlink:href="./images/sprite.svg#twitter-icon"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icons-footer p-icon">
+              <use xlink:href="./images/sprite.svg#p-icon"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icons-footer insta-icon">
+              <use xlink:href="./images/sprite.svg#insta-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <hr class="mt-10 mb-10">
+      <div class="footer-content flex flex-col lg:flex-row justify-center lg:justify-between lg:w-5/6 mr-auto z-10 relative">
+        <div class="col text-center lg:text-left">
+          <h3 class= "footer_header">Our company</h3>
+          <ul class="font-fontDM">
+            <li class="mb-2">
+              <a href="#" class="footer_link">How we work</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="footer_link">Why Insure?</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="footer_link">View plans</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="footer_link">Reviews</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col text-center lg:text-left">
+          <h3 class= "footer_header"> Help me</h3>
+          <ul class="font-fontDM">
+            <li class="mb-2">
+              <a href="#" class="footer_link">FAQ</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="footer_link">Terms of use</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="footer_link">Privacy policy</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="footer_link">Cookies</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col text-center lg:text-left">
+          <h3 class= "footer_header">Contact</h3>
+          <ul class="font-fontDM">
+            <li class="mb-2">
+              <a href="#" class="footer_link">Sales</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="footer_link">Support</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="footer_link">Live chat</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col text-center lg:text-left">
+          <h3 class= "footer_header">Others</h3>
+          <ul class="font-fontDM">
+            <li class="mb-2">
+              <a href="#" class="footer_link">Careers</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="footer_link">Press</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="footer_link">Licenses</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Ahmed-H-Ismael">Your Name Here</a>.
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
     "homepage":"https://github.com/Ahmed-H-Ismael/ininsure-landingpage.git"
   },
   "scripts": {
-    "build-css":"npx tailwindcss-cli@latest build -i ./src/input.css -o /output.css --watch"
+    "build-css":"npx tailwindcss-cli@latest build -i ./src/input.css -o ./output.css --watch"
     
   }
 }

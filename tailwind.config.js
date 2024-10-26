@@ -21,7 +21,6 @@ module.exports = {
         transform50:"-50%"
       },
       height:{
-        desktop:"85vh",
         mobile:"auto"
       }
     },

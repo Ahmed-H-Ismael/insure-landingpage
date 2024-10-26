@@ -1,10 +1,10 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.13",
-    "homepage":"https://ahmed-h-ismael.github.io/insure-landingPage/index.html"
+    "homepage":"https://github.com/Ahmed-H-Ismael/ininsure-landingpage.git"
   },
   "scripts": {
-    "build-css":"npx tailwindcss-cli@latest build -i ./src/input.css -o ./output.css --watch"
+    "build-css":"npx tailwindcss-cli@latest build -i ./src/input.css -o /output.css --watch"
     
   }
 }
